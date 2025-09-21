@@ -16,3 +16,23 @@ export interface CardProps {
   children: React.ReactNode; // main content inside the card
   hoverable?: boolean; // whether the card should react to hover
 }
+
+// Interface Property Data
+export interface PropertyProps {
+  name: string;
+  address: {
+    state: string;
+    city: string;
+    country: string;
+  };
+  rating: number;
+  category: string[];
+  price: number;
+  offers: {
+    bed: string;
+    shower: string;
+    occupants: string;
+  };
+  image: string;
+  discount?: string;
+}
